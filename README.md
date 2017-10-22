@@ -16,6 +16,6 @@ Run the file Text_to_speech.py (python Text_to_speech.py on Terminal).
 
 The audio file will be generate on your selected location (Example hello.mp3).
 
-### To Get Another Output
+### To Get Different Output
 
 Edit mytext = 'hello shubham pawar' with your text in Text_to_speech.py file.
