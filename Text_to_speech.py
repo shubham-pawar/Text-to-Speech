@@ -1,26 +1,19 @@
-# Import the required module for text
-# to speech conversion
 from gtts import gTTS
-
-# This module is imported so that we can
-# play the converted audio
 import os
 
-# The text that you want to convert to audio
+# Text to convert
 mytext = 'Hello shubham pawar'
-
-# Language in which you want to convert
 language = 'en'
 
-# Passing the text and language to the engine,
-# here we have marked slow=False. Which tells
-# the module that the converted audio should
-# have a high speed
+# Generate speech
 myobj = gTTS(text=mytext, lang=language, slow=False)
-
-# Saving the converted audio in a mp3 file named
-# welcome
 myobj.save("hello.mp3")
 
-# Playing the converted file
-os.system("mpg321 hello.mp3")
+# Cross-platform playback (works everywhere)
+if os.name == 'nt':  # Windows
+    os.system('start hello.mp3')
+elif os.name == 'posix':  # macOS/Linux
+    os.system('afplay hello.mp3')  # macOS
+    # os.system('mpg321 hello.mp3')  # Linux (if mpg321 installed)
+else:
+    print("Generated hello.mp3 - play manually")
