@@ -1,21 +1,37 @@
-## Dependency
-- python 2.7
+# Text-to-Speech
 
-In addition, please add the project folder to PYTHONPATH and pip install the following package:
-- gTTS
+Simple Python script that converts text to MP3 speech using **gTTS**. Updated for Python 3.8+.
 
-## Text To Speech
+## ✨ Features
+- Text → high-quality MP3 speech
+- Cross-platform playback
+- Customizable text input
 
-- This is simple code for Text to Speech in Python.
+## 🚀 Usage
 
-- All you need a [python](https://www.python.org/downloads/) in your computer.
+1. **Install:**
+   ```bash
+   pip install gTTS
+   ```
 
-- Move to your file location by using cd command (Example cd Desktop/Text-to-speech).
+2. **Run:**
+   ```bash
+   python Text_to_speech.py
+   ```
 
-- Run the file Text_to_speech.py (python Text_to_speech.py on Terminal).
+3. **Output:** `hello.mp3` generated
 
-- The audio file will be generate on your selected location (Example hello.mp3).
+## ✏️ Customize
+```python
+mytext = 'Hello shubham pawar'  # Edit this line
+```
 
-## To Get Different Output
+## 🛠 Modern Python 3.8+
+- Fixed Linux-only `mpg321` playback
+- Cross-platform compatible
 
-- Edit mytext = 'hello shubham pawar' with your text in Text_to_speech.py file.
+## 📄 License
+Apache License 2.0 - See [LICENSE](LICENSE) file.
+
+## 👨‍💻 Author
+[Shubham Pawar](https://github.com/shubham-pawar)
