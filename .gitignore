@@ -1,30 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-### OSX ###
-*.DS_Store
-.AppleDouble
-.LSOverride
+# PyInstaller
+#  Usually: .venv/Lib/site-packages/pyinstaller
+build/
+dist/
+*.spec
 
-# Icon must end with two \r
-Icon
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Thumbnails
-._*
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+ehthumbs_vista.db
